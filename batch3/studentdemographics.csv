@@ -1,0 +1,101 @@
+SIS ID,FederalRaceCategory,PrimaryLanguage,ELLStatus,SpecialEducation,LowIncome
+st101,Hispanic,English,,,0
+st102,White,English,,,1
+st103,Hispanic,English,English Learner,Designated Instruction Service,1
+st104,White,French,,,1
+st105,Black,English,,,0
+st106,Black,English,,,1
+st107,Black,English,,,0
+st108,Black,English,,,0
+st109,White,English,,,1
+st110,Hispanic,English,,,1
+st111,Black,English,Redesignated Fluent English Proficient,,1
+st112,American Indian,English,,Designated Instruction Service,0
+st113,Hispanic,English,,Special Day Class,0
+st114,American Indian,English,,,0
+st115,Black,English,,,0
+st116,Black,English,English Learner,,1
+st117,Black,English,,,0
+st118,Asian,English,English Learner,Designated Instruction Service,1
+st119,Asian,English,,,0
+st120,Hispanic,English,,,1
+st121,Asian,Spanish,,,0
+st122,White,Spanish,,,0
+st123,White,English,,,0
+st124,Hispanic,English,,Special Day Class,0
+st125,White,Spanish,,Designated Instruction Service,0
+st126,Black,English,,,1
+st127,Black,English,,,1
+st128,Black,English,,Designated Instruction Service,1
+st129,Asian,English,,,0
+st130,Black,English,,,0
+st131,American Indian,Spanish,,Designated Instruction Service,1
+st132,Asian,English,,Resource Specialty Program,1
+st133,Black,English,Initially Fluent English Proficient,Resource Specialty Program,0
+st134,White,English,,,0
+st135,Asian,English,English Learner,,0
+st136,Asian,Spanish,Redesignated Fluent English Proficient,,1
+st137,White,English,English Learner,,1
+st138,Asian,Spanish,,,1
+st139,White,English,,,0
+st140,White,English,,,0
+st141,Hispanic,English,,,0
+st142,White,English,,,1
+st143,Black,English,,,1
+st144,White,Spanish,Redesignated Fluent English Proficient,,0
+st145,Asian,English,,,0
+st146,White,English,,,0
+st147,Hispanic,English,,,1
+st148,White,English,,Special Day Class,1
+st149,Hispanic,English,English Learner,,0
+st150,Black,English,,,1
+st151,American Indian,Spanish,,,0
+st152,White,English,,,0
+st153,Black,English,,,0
+st154,Hispanic,Spanish,,,1
+st155,Hispanic,English,,,0
+st156,White,Spanish,,,0
+st157,White,English,,,0
+st158,Black,English,,,0
+st159,Hispanic,English,,,1
+st160,Black,English,,,0
+st161,Hispanic,English,,,0
+st162,American Indian,English,,Designated Instruction Service,0
+st163,American Indian,English,Initially Fluent English Proficient,,1
+st164,Black,Spanish,,,1
+st165,Hispanic,German,,,1
+st166,Black,English,Initially Fluent English Proficient,Designated Instruction Service,0
+st167,Black,English,,,1
+st168,Black,English,,,0
+st169,White,English,,,0
+st170,Black,English,,,0
+st171,White,English,,,1
+st172,Black,English,English Learner,,1
+st173,Asian,English,,Special Day Class,0
+st174,Hispanic,English,,,0
+st175,White,English,Initially Fluent English Proficient,Resource Specialty Program,0
+st176,Black,English,,,1
+st177,American Indian,English,English Learner,,0
+st178,Black,English,,,1
+st179,White,English,English Learner,,1
+st180,Hispanic,English,English Learner,,1
+st181,Black,English,,,0
+st182,Asian,Spanish,,,1
+st183,White,Spanish,,,0
+st184,Hispanic,English,,,0
+st185,Hispanic,Spanish,,Designated Instruction Service,0
+st186,White,English,Initially Fluent English Proficient,,0
+st187,Asian,English,,,1
+st188,Black,English,,Designated Instruction Service,0
+st189,Asian,English,English Learner,,0
+st190,White,English,Initially Fluent English Proficient,,0
+st191,Black,English,,,1
+st192,Hispanic,English,,,0
+st193,White,English,,,0
+st194,Asian,English,Initially Fluent English Proficient,Resource Specialty Program,0
+st195,Asian,English,,Resource Specialty Program,0
+st196,Asian,English,,,0
+st197,Asian,English,,,1
+st198,Asian,English,Redesignated Fluent English Proficient,,0
+st199,Asian,Spanish,,,1
+st200,White,English,Redesignated Fluent English Proficient,,1
