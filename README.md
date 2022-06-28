@@ -1,9 +1,5 @@
 # OEA Hack Assessment
 
-Also published at:
-
-* https://github.com/andreas-empired/oea-assessment#readme
-
 ## Problem Statement
 
 Confirming the scenario and problem statement to be addressed:
