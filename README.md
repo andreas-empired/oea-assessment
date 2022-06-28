@@ -1,5 +1,9 @@
 # OEA Hack Assessment
 
+Also published at:
+
+* https://github.com/andreas-empired/oea-assessment#readme
+
 ## Problem Statement
 
 Confirming the scenario and problem statement to be addressed:
@@ -8,9 +12,11 @@ Confirming the scenario and problem statement to be addressed:
 
 ## Datasets
 
-Test data sets used for extraction, ingestions & Visualisation.
+Test data sets used for extraction, ingestions & visualisation.
 
 ### Batch 1
+
+Dataset provided by OpenEduAnalytics github:
 
 ```
 https://raw.githubusercontent.com/microsoft/OpenEduAnalytics/main/modules/Student_and_School_Data_Systems/test_data/_batch1/studentattendance.csv
@@ -20,6 +26,8 @@ https://raw.githubusercontent.com/microsoft/OpenEduAnalytics/main/modules/Studen
 
 ### Batch 2
 
+Dataset provided by OpenEduAnalytics github:
+
 ```
 https://raw.githubusercontent.com/microsoft/OpenEduAnalytics/main/modules/Student_and_School_Data_Systems/test_data/batch2/studentattendance.csv
 https://raw.githubusercontent.com/microsoft/OpenEduAnalytics/main/modules/Student_and_School_Data_Systems/test_data/batch2/studentdemographics.csv
@@ -27,6 +35,8 @@ https://raw.githubusercontent.com/microsoft/OpenEduAnalytics/main/modules/Studen
 ```
 
 ### Batch 3
+
+Empired custom dataset:
 
 ```
 https://raw.githubusercontent.com/andreas-empired/oea-assessment/main/batch3/studentattendance.csv
@@ -38,11 +48,11 @@ https://raw.githubusercontent.com/andreas-empired/oea-assessment/main/batch3/stu
 
 Our response includes a master pipeline which is an end-to-end pipeline, extracting data from an array of HTTP endpoints (see "Batch 1" dataset) followed by ingesting the extracted to Stage 2 persistence. 
 The default batch category used is **Delta**. The pipeline however also provides capability to leverage both the **snapshot** and **incremental** data batch categories by passing it as a parameter. For each of the batch categories,
-we've used existing implementation provided by the available OEA framework library.
+we've used existing implementation provided by the available OEA framework library. The **master** pipeline contains and end-to-end extraction of all datasets in three separate batches but also the ingestion of data to Stage 2 and creation of Lake and SQL databases.
 
 <div><img src="https://raw.githubusercontent.com/andreas-empired/oea-images/main/pipeline_master.png" width="840"/></div>
 
-## Landing Data
+## Landing data
 
 In response to the requirement:
 
@@ -85,7 +95,6 @@ Stage 1 data successfully extracted for batch 1, batch 2 and batch 3:
 
 <div><img src="https://raw.githubusercontent.com/andreas-empired/oea-images/main/storage_stage2p_delta.png" width="580"/></div>
 
-
 ## Lake Database
 
 In response to the requirement:
@@ -106,7 +115,25 @@ In response to requirement:
 
 > <font color="red">*4. Provide PowerBI visualizations that give insights to education system leaders for decision making and meaningful insights [5 points]*</font>
 
-<font color="red">**TODO** (Piyush, Marc, Calvin)</font>
+<div><img src="https://raw.githubusercontent.com/andreas-empired/oea-images/main/powerbi_read_me.png" width="720"/></div>
+
+<b>Attendance Summary Dashboard</b>
+<div><img src="https://raw.githubusercontent.com/andreas-empired/oea-images/main/powerbi_attendancesummary_dashboard.png" width="720"/></div>
+
+<b>Attendance Summary Dashboard for Individual School</b>
+<div><img src="https://raw.githubusercontent.com/andreas-empired/oea-images/main/powerbi_attendancesummary_individualschool_dashboard.png" width="720"/></div>
+
+<b>Assessment Score Summary Dashboard</b>
+<div><img src="https://raw.githubusercontent.com/andreas-empired/oea-images/main/powerbi_assesmentscoresummary_dashboard.png" width="720"/></div>
+
+<b>Assesment Score Summary Dashboard for Individual School</b>
+<div><img src="https://raw.githubusercontent.com/andreas-empired/oea-images/main/powerbi_assesmentscoresummary_individualschool_dashboard.png" width="720"/></div>
+
+<b>Attendance vs Assesment Score Dashboard</b>
+<div><img src="https://raw.githubusercontent.com/andreas-empired/oea-images/main/powerbi_attendancevsscore_dashboard.png" width="720"/></div>
+
+<b>Attendance vs Assesment Score Dashboard for Individual School</b>
+<div><img src="https://raw.githubusercontent.com/andreas-empired/oea-images/main/powerbi_attendancevsscore_sch_dashboard.png" width="720"/></div>
 
 ## Semantic Model
 
@@ -126,38 +153,44 @@ Key relationships in the dataset
 
 In response to requirement:
 
-> *6. Provide a data dictionary [2 points]*
+> <font color="red">*6. Provide a data dictionary [2 points]*</font>
 
 We have used Azure Purview to develop data dictionary. The collection has been setup  to point to the OEA Serverless Endpoint. 
 
-<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/oea_purview_collections.png width="720"/></div>
+<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/oea_purview_collections.png width="840"/></div>
 
 The scan performed on the data source resulted in listing of the assets
 
-<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/oea_purview_assets.png width="720"/></div>
+<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/oea_purview_assets.png width="840"/></div>
 
 The assets overview, details and schema related information is referenced in next section. The data dictionary information was enriched by adding the asset description, data elements definition etc. in Azure Purview.
 
-<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentattendance_lookup_overview.png width="720"/></div>
+### Student Attendance
 
-<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentattendance_lookup_schema.png width="720"/></div>
+<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentattendance_lookup_overview.png width="840"/></div>
 
-<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentattendance_pseudo_overview.png width="720"/></div>
+<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentattendance_lookup_schema.png width="840"/></div>
 
-<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentattendance_pseudo_schema.png width="720"/></div>
+<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentattendance_pseudo_overview.png width="840"/></div>
 
-<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentdemographics_lookup_overview.png width="720"/></div>
+<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentattendance_pseudo_schema.png width="840"/></div>
 
-<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentdemographics_lookup_schema.png width="720"/></div>
+### Student Demographics
 
-<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentdemographics_pseudo_overview.png width="720"/></div>
+<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentdemographics_lookup_overview.png width="840"/></div>
 
-<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentdemographics_pseudo_schema.png width="720"/></div>
+<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentdemographics_lookup_schema.png width="840"/></div>
 
-<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentsectionmark_lookup.png width="720"/></div>
+<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentdemographics_pseudo_overview.png width="840"/></div>
 
-<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentsectionmark_lookup_schema.png width="720"/></div>
+<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentdemographics_pseudo_schema.png width="840"/></div>
 
-<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentsectionmark_pseudo_overview.png width="720"/></div>
+### Student Section Mark
 
-<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentsectionmark_pseudo_schema.png width="720"/></div>
+<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentsectionmark_lookup.png width="840"/></div>
+
+<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentsectionmark_lookup_schema.png width="840"/></div>
+
+<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentsectionmark_pseudo_overview.png width="840"/></div>
+
+<div><img src=https://raw.githubusercontent.com/andreas-empired/oea-images/main/studentsectionmark_pseudo_schema.png width="840"/></div>
