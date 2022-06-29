@@ -113,6 +113,9 @@ In response to requirement:
 
 <div><img src="https://raw.githubusercontent.com/andreas-empired/oea-images/main/powerbi_read_me.png" width="720"/></div>
 
+<b>School Performance Summary Dashboard</b>
+<div><img src="https://raw.githubusercontent.com/andreas-empired/oea-images/main/powerbi_school_performance_dashboard.png" width="720"/></div>
+
 <b>Attendance Summary Dashboard</b>
 <div><img src="https://raw.githubusercontent.com/andreas-empired/oea-images/main/powerbi_attendancesummary_dashboard.png" width="720"/></div>
 
